@@ -669,9 +669,8 @@ body {
   background-color: #f7f7f7; }
   .pricing__item-wrapper {
     padding-left: 7px;
-    padding-right: 7px; }
-    .pricing__item-wrapper:not(:last-child) {
-      margin-bottom: 2rem; }
+    padding-right: 7px;
+    margin-bottom: 2rem; }
   .pricing__item {
     -webkit-box-shadow: 4px 9px 14px 0 rgba(0, 0, 0, 0.35);
     box-shadow: 4px 9px 14px 0 rgba(0, 0, 0, 0.35);
