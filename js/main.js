@@ -4,6 +4,7 @@ var swiper1 = new Swiper('.swiper-container', {
     slidesPerView: 1,
     loop: true,
     simulateTouch: false,
+    touchRatio: 0,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
