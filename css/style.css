@@ -67,6 +67,8 @@ body {
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+  .heading.center {
+    text-align: center; }
   .heading__main {
     font-size: 6rem;
     color: #fff;
@@ -151,6 +153,12 @@ body {
   height: 2px;
   background-color: #15a724;
   width: 7rem; }
+
+.line-after.center::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .divider__line {
   max-width: 1220px;
@@ -777,22 +785,69 @@ body {
 
 .team {
   background-image: url("../img/blue-bg.png"); }
-  .team .team__container {
+  .team__container {
     width: 100%;
     overflow: hidden; }
-  .team .swiper-slide {
-    max-width: 400px; }
-  .team__image {
-    margin-bottom: 2.8rem; }
-  .team__name {
-    font-family: "MavenPro-SemiBold", sans-serif;
-    font-size: 2rem;
-    color: #fff;
-    padding-bottom: 1.2rem; }
-  .team__post {
-    font-family: "MavenPro-Medium", sans-serif;
-    font-size: 1.8rem;
-    color: #fff; }
+  .team__member {
+    margin: 0 2rem 2rem 0; }
+  .team__upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .team__upper .team__member {
+      max-width: 328px;
+      margin: 0 2rem 2rem 0; }
+      @media (max-width: 479px) {
+        .team__upper .team__member {
+          max-width: 250px; } }
+    .team__upper .team__image {
+      max-width: 100%;
+      max-height: 350px;
+      margin-bottom: 2.8rem; }
+    .team__upper .team__name {
+      font-family: "MavenPro-SemiBold", sans-serif;
+      font-size: 1.8rem;
+      color: #fff;
+      padding-bottom: 1rem; }
+    .team__upper .team__post {
+      font-family: "MavenPro-Medium", sans-serif;
+      font-size: 1.6rem;
+      color: #fff; }
+  .team__other {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .team__other .team__member {
+      max-width: 180px;
+      margin: 0 1rem 1rem 0; }
+      @media (max-width: 479px) {
+        .team__other .team__member {
+          max-width: 150px; } }
+      @media (max-width: 380px) {
+        .team__other .team__member {
+          max-width: 102px; } }
+    .team__other .team__image {
+      max-width: 100%;
+      margin-bottom: 1.4rem; }
+    .team__other .team__name {
+      font-family: "MavenPro-SemiBold", sans-serif;
+      font-size: 1.6rem;
+      color: #fff;
+      padding-bottom: .2rem; }
+    .team__other .team__post {
+      font-family: "MavenPro-Medium", sans-serif;
+      font-size: 1.4rem;
+      color: #fff; }
 
 .news {
   background-color: #f7f7f7; }
@@ -888,7 +943,7 @@ body {
     font-size: 2rem;
     color: #333;
     font-family: inherit;
-    padding: 2rem 3rem; }
+    padding: 1.2rem 3rem; }
     .footer .contact__form input:focus, .footer .contact__form select:focus, .footer .contact__form textarea:focus {
       -webkit-box-shadow: none;
       box-shadow: none; }
