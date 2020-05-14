@@ -203,6 +203,7 @@ body {
           .header .swiper-container .slider-content .paragraph-main {
             display: none; } }
     .header .swiper-container .swiper-pagination-bullet {
+      right: 0;
       width: 1.2rem;
       height: 1.2rem;
       border: 2px solid #fff;
@@ -789,8 +790,9 @@ body {
     width: 100%;
     overflow: hidden; }
   .team__member {
-    margin: 0 2rem 2rem 0; }
-  .team__upper {
+    margin: 0 2rem 2rem 0;
+    text-align: center; }
+  .team__upper, .team__ceo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -799,22 +801,22 @@ body {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .team__upper .team__member {
+    .team__upper .team__member, .team__ceo .team__member {
       max-width: 328px;
       margin: 0 2rem 2rem 0; }
       @media (max-width: 479px) {
-        .team__upper .team__member {
+        .team__upper .team__member, .team__ceo .team__member {
           max-width: 250px; } }
-    .team__upper .team__image {
+    .team__upper .team__image, .team__ceo .team__image {
       max-width: 100%;
       max-height: 350px;
       margin-bottom: 2.8rem; }
-    .team__upper .team__name {
+    .team__upper .team__name, .team__ceo .team__name {
       font-family: "MavenPro-SemiBold", sans-serif;
       font-size: 1.8rem;
       color: #fff;
       padding-bottom: 1rem; }
-    .team__upper .team__post {
+    .team__upper .team__post, .team__ceo .team__post {
       font-family: "MavenPro-Medium", sans-serif;
       font-size: 1.6rem;
       color: #fff; }

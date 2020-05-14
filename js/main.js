@@ -2,6 +2,8 @@ var swiper1 = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
     slidesPerView: 1,
+    noSwiping: true,
+    noSwipingClass: '.no__swipper',
     loop: true,
     simulateTouch: false,
     touchRatio: 0,
