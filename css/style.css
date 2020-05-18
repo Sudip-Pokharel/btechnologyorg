@@ -642,7 +642,7 @@ body {
       .clients__content.content__custom img {
         padding-right: 1rem; }
     .clients__content img {
-      max-height: 120px;
+      max-height: 80px;
       max-width: 100%; }
     .clients__content:hover {
       -webkit-transform: scale(1.03);
